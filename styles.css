@@ -1,0 +1,384 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+
+.container {
+  height: 100vh;
+}
+
+.bodyContent {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5vw;
+  height: 70%;
+  width: 70%;
+}
+.bodyContent__box {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(52, 58, 64, 0.269);
+}
+.bodyContent__logo {
+  width: 100%;
+  height: 8vw;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-image: url("./Assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40vw;
+  background-color: rgba(186, 186, 186, 0.736);
+  border-bottom: 2px solid rgba(52, 58, 64, 0.269);
+}
+.bodyContent__inside {
+  display: flex;
+  flex-direction: row;
+}
+.bodyContent__inside__inputs {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.bodyContent__inside__inputs-1 {
+  height: 3vw;
+  width: 20vw;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: 1px solid #343a40;
+  font-size: 1.2vw;
+}
+.bodyContent__inside__inputs-1:focus {
+  border: 5px solid #0f6fc5;
+}
+.bodyContent__inside__inputs__checkbox {
+  align-items: center;
+}
+.bodyContent__inside__inputs__checkbox-2 {
+  font-size: 20px;
+  width: 1vw;
+  height: 1vw;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.bodyContent__inside__inputs__checkbox__lable {
+  font-size: 1.2vw;
+}
+.bodyContent__inside__inputs__sumbit {
+  height: 3vw;
+  width: 15vw;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #0f6fc5;
+  margin-top: 20px;
+}
+.bodyContent__inside__inputs__sumbit:hover {
+  background-color: #008196;
+}
+.bodyContent__inside__otherButtons {
+  width: 50%;
+  display: flex;
+  margin-top: 2vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bodyContent__inside__otherButtons__forgetPass {
+  background-color: rgba(255, 222, 173, 0);
+  border: none;
+  width: 20vw;
+  text-align: left;
+  font-size: 1vw;
+  color: #0f6fc5;
+}
+.bodyContent__inside__otherButtons__text-1 {
+  font-size: 1vw;
+  margin-top: 2vw;
+}
+.bodyContent__inside__otherButtons__text-1::after {
+  content: "?";
+  margin-left: 5px;
+  font-weight: bold;
+  background-color: #008196;
+  color: white;
+  padding: 0 5px;
+  width: 5vw;
+  width: 5vw;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.bodyContent__inside__otherButtons__text-2 {
+  font-size: 1vw;
+  margin-top: 2vw;
+}
+.bodyContent__inside__otherButtons__guest {
+  margin-top: 5vw;
+  height: 3vw;
+  width: 20vw;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid #6a737b;
+  font-size: 1.2vw;
+  outline: none;
+}
+
+@media (max-width: 992px) {
+  .bodyContent__inside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .bodyContent__inside__inputs-1 {
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #343a40;
+    font-size: 1.5vw;
+  }
+  .bodyContent__inside__inputs__checkbox {
+    align-items: center;
+    margin-top: 1vw;
+  }
+  .bodyContent__inside__inputs__checkbox-2 {
+    font-size: 1.5vw;
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .bodyContent__inside__inputs__checkbox__lable {
+    font-size: 2vw;
+  }
+  .bodyContent__inside__inputs__sumbit {
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5px;
+    font-size: 2vw;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #0f6fc5;
+    margin-top: px;
+  }
+  .bodyContent__inside__otherButtons__forgetPass {
+    background-color: rgba(255, 222, 173, 0);
+    border: none;
+    width: 30vw;
+    text-align: left;
+    font-size: 1.5vw;
+    color: #0f6fc5;
+  }
+  .bodyContent__inside__otherButtons__text-1 {
+    font-size: 1.5vw;
+    width: 20vw;
+    margin-top: 2vw;
+    text-align: left;
+    margin-left: -10vw;
+  }
+  .bodyContent__inside__otherButtons__text-1::after {
+    width: 3vw;
+    width: 3vw;
+    cursor: pointer;
+    border-radius: 1.5vw;
+  }
+  .bodyContent__inside__otherButtons__text-2 {
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    width: 20vw;
+    text-align: left;
+    margin-left: -10vw;
+  }
+  .bodyContent__inside__otherButtons__guest {
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #6a737b;
+    font-size: 2vw;
+    outline: none;
+  }
+}
+@media (max-width: 768px) {
+  .bodyContent__inside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .bodyContent__inside__inputs-1 {
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #343a40;
+    font-size: 2vw;
+  }
+  .bodyContent__inside__inputs__checkbox {
+    align-items: center;
+    margin-top: 1vw;
+  }
+  .bodyContent__inside__inputs__checkbox-2 {
+    font-size: 2vw;
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .bodyContent__inside__inputs__checkbox__lable {
+    font-size: 2vw;
+  }
+  .bodyContent__inside__inputs__sumbit {
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5px;
+    font-size: 2vw;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #0f6fc5;
+    margin-top: px;
+  }
+  .bodyContent__inside__otherButtons__forgetPass {
+    background-color: rgba(255, 222, 173, 0);
+    border: none;
+    width: 30vw;
+    text-align: left;
+    font-size: 2vw;
+    color: #0f6fc5;
+  }
+  .bodyContent__inside__otherButtons__text-1 {
+    font-size: 2vw;
+    width: 20vw;
+    margin-top: 2vw;
+    text-align: left;
+    margin-left: -10vw;
+  }
+  .bodyContent__inside__otherButtons__text-1::after {
+    width: 3vw;
+    width: 3vw;
+    cursor: pointer;
+    border-radius: 1.5vw;
+  }
+  .bodyContent__inside__otherButtons__text-2 {
+    font-size: 2vw;
+    margin-top: 2vw;
+    width: 20vw;
+    text-align: left;
+    margin-left: -10vw;
+  }
+  .bodyContent__inside__otherButtons__guest {
+    margin-top: 5vw;
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #6a737b;
+    font-size: 2vw;
+    outline: none;
+  }
+}
+@media (max-width: 576px) {
+  .bodyContent__inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyContent__inside__inputs-1 {
+    height: 7vw;
+    width: 50vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid #343a40;
+    font-size: 2.4vw;
+  }
+  .bodyContent__inside__inputs__checkbox {
+    align-items: center;
+    margin-top: -5vw;
+  }
+  .bodyContent__inside__inputs__checkbox-2 {
+    font-size: 20px;
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .bodyContent__inside__inputs__checkbox__lable {
+    font-size: 2.4vw;
+  }
+  .bodyContent__inside__inputs__sumbit {
+    height: 7vw;
+    width: 50vw;
+    border-radius: 5px;
+    font-size: 2.4vw;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #0f6fc5;
+    margin-top: -5px;
+  }
+  .bodyContent__inside__otherButtons__forgetPass {
+    background-color: rgba(255, 222, 173, 0);
+    border: none;
+    width: 50vw;
+    text-align: center;
+    font-size: 2.4vw;
+    color: #0f6fc5;
+  }
+  .bodyContent__inside__otherButtons__text-1 {
+    font-size: 2.4vw;
+    width: 50vw;
+    margin-top: 2vw;
+    text-align: center;
+  }
+  .bodyContent__inside__otherButtons__text-1::after {
+    width: 3vw;
+    width: 3vw;
+    cursor: pointer;
+    border-radius: 1.5vw;
+  }
+  .bodyContent__inside__otherButtons__text-2 {
+    font-size: 2.4vw;
+    margin-top: 2vw;
+    width: 50vw;
+    text-align: center;
+  }
+  .bodyContent__inside__otherButtons__guest {
+    margin-top: 5vw;
+    height: 7vw;
+    width: 50vw;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    margin-left: 25px;
+    border: 1px solid #6a737b;
+    font-size: 2.4vw;
+    outline: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
